@@ -1,0 +1,19 @@
+{
+  "name": "api-testing-maulik",
+  "version": "1.0.0",
+  "description": "Maulik PAtel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Cypress:open": "npx cypress open",
+    "Cypress:CRUD": "npx cypress run --spec .\\cypress\\e2e\\crud_test.cy.js --browser chrome  --reporter-options reportFilename=Test_Api",
+    "Cypress:CRUDENV":"npx cypress run --env url=https://gorest.co.in/ --spec .\\cypress\\e2e\\crud_test.cy.js --browser chrome  --reporter-options reportFilename=Test_Api_With_ENV"
+
+  },
+  "author": "Maulik PAtel",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}
